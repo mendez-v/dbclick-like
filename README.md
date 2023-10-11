@@ -7,6 +7,4 @@ Consite en:
 
 🎯 la animación simula un like de redes sociales.
 
-<div>
-  <video src="./assets/vid/show.mp4" controls title="Like" controls autoplay loop></video>
-</div>
+![Preview](./assets/vid/preview.gif)
