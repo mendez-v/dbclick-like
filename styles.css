@@ -1,0 +1,48 @@
+body {
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  display: grid;
+  place-content: center;
+  background-color: #070912;
+}
+article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article img {
+  inline-size: 300px;
+}
+
+article svg {
+  position: absolute;
+  inline-size: 64px;
+  pointer-events: none; /* HACE QUE LOS CLICS NO FUNCIONEN EN ÉL */
+  opacity: 0;
+}
+
+article svg.like {
+  animation: 1s like ease-in-out;
+}
+@keyframes like {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  15% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  30% {
+    scale: .95;
+  }
+  45%, 80% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+    opacity: 1;
+  }
+}
